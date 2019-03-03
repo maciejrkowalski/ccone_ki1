@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+
+          crossorigin="anonymous">
+    <title>zBT0OwP9adJdq5G9sjCqo</title>
+    <meta name="author" content="Maciej Kowalski">
+</head>
+<body>
+<center>
+    <div class="w-50 p-3">
+        <div class="jumbotron">
+            <h1 class="display-4">Raport z kontaktu<br>
+            </h1>
+            <p class="lead"></p>
+            <hr class="my-4"> </div>
+    </div>
+</center>
+<center>
+    <div class="container">
+        <form th:action="@{/2AYETlLbdDZ98wBSSltlX8pjxM9QmIvcLA2SUYJTEVofsyTA7BWbrbceMxQta4SdG38S5F2iPBRVpXuMtBqFuzZw6nwwGqfQggjlsazlE2TSze3bw}" th:object="${surveyForm}" method="post">
+            <div class="form-group"><strong><label for="NIP">NIP</label></strong><input
+
+                    class="form-control" name="NIP" id="NIP" placeholder="NIP" required=""
+
+                    type="text"> </div>
+            <div class="form-group"><label for="company">osoba / firma</label><input
+
+                    class="form-control" id="company" name="company" placeholder="" type="text">
+            </div>
+            <div class="form-group"><label for="">osoba kontaktowa</label>
+                <div class="form-row">
+                    <div class="col"> <input id="contactPersonFname" name="contactPersonFname"
+
+                                             class="form-control" placeholder="imię" required="" type="text">
+                    </div>
+                    <div class="col"> <input id="contactPersonLname" name="contactPersonLname"
+
+                                             class="form-control" placeholder="nazwisko" required="" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group"><label for="tel">telefon</label><input class="form-control"
+
+                                                                           id="tel" name="tel" placeholder="" required="" type="text"> </div>
+            <div class="form-group"><label for="email">e-mail</label><input class="form-control"
+
+                                                                            id="email" name="email" placeholder="" type="text"> </div>
+            <div class="form-group"><label for="obligationValue">przybliżona
+                wartość zobowiązania </label><input class="form-control" id="obligationValue"
+
+                                                    name="obligationValue" placeholder="" required="" type="text"> </div>
+            <div class="form-group"><label for="document">podstawa zobowiązania
+                (dokument) </label><input class="form-control" id="document" name="document"
+
+                                          placeholder="" required="" type="text"> </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">przybliżony termin wymagalności <input
+
+                        class="form-control" id="payDate" name="payDate" required="" type="text">
+                </div>
+                <div class="form-group col-md-6"> preferowany termin kontaktu<input
+
+                        class="form-control" id="contactDate" name="contactDate" required=""
+
+                        type="text"> </div>
+            </div>
+            <div> </div>
+            <small id="passwordHelpBlock" class="form-text text-muted"> w obu
+                polach powyżej wpisz datę w formacie dd.MM.RRRR, na przykład
+                19.02.2019</small> <br>
+            <div class="form-group"> <label for="objections">obiekcje Klienta</label>
+                <textarea class="form-control" id="objections" name="objections" rows="3"></textarea>
+            </div>
+            <div class="form-group"> <label for="additionalContent">dodatkowa
+                treść</label> <textarea class="form-control" id="additionalContent"
+
+                                        name="additionalContent" rows="3"></textarea> </div>
+
+                <div class="form-group"><label for="consultantName">przesłane przez</label><input
+
+                        class="form-control" id="consultantName" name="consultantName" placeholder=""
+
+                        type="text" required> </div>
+
+            <button type="submit" class="btn btn-primary btn-lg">WYŚLIJ</button> </form>
+    </div>
+</center>
+<center> <br>
+    <div> <img src="http://zlapkontakt.pl/wp-content/uploads/ccone.jpg" width="200">
+    </div>
+    <p class="font-weight-light">©H2H 2019</p>
+</center>
+</body>
+</html>
